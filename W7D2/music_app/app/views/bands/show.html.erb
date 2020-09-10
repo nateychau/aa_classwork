@@ -1,0 +1,9 @@
+<ul>
+    <li><%= @band.name %></li>
+</ul>
+<form action="<%= band_url(@band) %>" method="POST">
+<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+    <input type="hidden" name="_method" value="DELETE">
+    <input type="submit" value="Delete band">
+</form>
+
