@@ -1,0 +1,22 @@
+.main-content a{
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 27px;
+    font-style: italic;
+}
+
+.main-content{
+    display: flex;
+}
+
+.news-col li{
+    list-style-type: disc;
+    padding: 3px;
+    line-height: 1.5;
+}
+
+.author{
+    color: $gray;
+    padding-top: 3px;
+
+}
