@@ -1,0 +1,19 @@
+<h1>Create New Post</h1>
+<form action="<%=posts_url%>" method="POST">
+    <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>">
+    <label>Title: </label>
+    <input type="text" name="post[title]" value="<%=@post.title%>">
+
+    <label>URL: </label>
+    <input type="text" name="post[url]" value="<%=@post.url%>">
+
+
+
+    <input type="submit" value="Submit">
+    <% if flash[:errors] %>
+        <% flash[:errors].each do |error| %>
+            <%= error %>
+        <% end %>
+    <% end %>
+    <input type="hidden" name="post[author_id]" value="<%= current_user.id %>">
+</form>
