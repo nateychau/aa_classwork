@@ -1,0 +1,18 @@
+import { __esModule } from "../dist/main";
+// i think this was in the skeleton
+export default class Level {
+  constructor(dimensions) {
+    this.dimensions = dimensions;
+  }
+
+  drawBackground(ctx) {
+    ctx.fillStyle = "skyblue";
+    ctx.fillRect(0, 0, this.dimensions.width, this.dimensions.height);
+  }
+
+  animate(ctx) {
+    this.drawBackground(ctx);
+  }
+}
+
+// module.exports = Level;
