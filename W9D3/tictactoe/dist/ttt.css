@@ -1,0 +1,34 @@
+li{
+    list-style: none;
+}
+
+.grid {
+    display: flex; 
+    width: 600px; 
+    flex-wrap: wrap; 
+    botrder: 5px solid black; 
+    /* border-right: 5px solid black; */
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.square {
+    display: flex;
+    width: 190px;
+    height: 190px; 
+    background-color: gray;
+    border: 5px solid black;
+}
+
+.square:hover{
+    background-color:yellow;
+}
+
+
+.played-square{
+    background-color: white;
+    font-size : 120px; 
+    justify-content: space-evenly; 
+    align-items: center;
+    /* padding-top: -50px; */
+}
