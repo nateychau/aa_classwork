@@ -1,0 +1,77 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+
+body h2, p{
+    text-align: center;
+}
+
+/* .game{
+    display: flex;
+    justify-content: center;
+} */
+
+.board-row{
+    display: flex;
+}
+
+.tile-hidden {
+    /* border: 1px solid gray; */
+    border-style: outset;
+    width: 20px;
+    height: 20px;
+    background-color: lightgray;
+}
+
+.tile-flagged {
+    /* border: 1px solid gray; */
+    border-style: outset;
+    width: 20px;
+    height: 20px;
+    background-color: lightgray;
+}
+
+.tile-explored {
+    /* border: 1px solid gray; */
+    border-style: inset;
+    width: 20px;
+    height: 20px;
+    background-color: lightgray;
+}
+
+.tile-bombed {
+    /* border: 1px solid gray; */
+    border-style: inset;
+    width: 20px;
+    height: 20px;
+    background-color: lightgray;
+}
+
+.modal-is-open{
+    /* display: block; */
+    position: absolute; 
+    background: rgba(0, 0, 0, 0.7);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+
+.modal-form{
+    /* position: absolute; */
+    width: 300px;
+    height: 100px;
+    background: white;
+    border: 5px solid;
+    border-color: black;
+    /* border-width: ; */
+    border-radius: 3px;
+    text-align: center;
+    
+}
