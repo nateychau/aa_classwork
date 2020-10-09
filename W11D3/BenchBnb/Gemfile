@@ -51,6 +51,8 @@ group :development do
   gem 'annotate'
   gem 'jquery-rails'
   gem 'turbolinks'
+  gem 'figaro'
+  gem 'pry-rails'
 end
 
 group :test do
